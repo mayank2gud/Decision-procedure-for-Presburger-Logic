@@ -1,11 +1,17 @@
 # MayankSati_ATC_2021_Assignment
 
 Instructions to run the code:
+
 First the user needs to define the variables that are used in the z3 expression and store them in list x[]. (because it seems that z3 variable needs to be defined prior to expressing the z3 formula)
+
 Example :
 
-if z3 formula is f=Not(Not(x1+2*x2+(-3)*x3<=5))
+if z3 formula is 
+
+f=Not(Not(x1+2*x2+(-3)*x3<=5))
+
 then user needs to define:
+
 x1=Int('x1')
 
 x2=Int('x2')
@@ -30,8 +36,10 @@ Ex:	f=x1+x2<=5
 
 Note:
 To enter negative coeffecients, one needs to explicitly write -1*(z3 variable)
+
 Ex: 
 for z3 formula 2*x1-3*x2<=5,
+
 f should be: f=2*x1+(-3)*x2<=5
 
 Due to time constraints and increasing comlexity of the code, it is assumed that in 'and' operator, both the arguments have "all" the z3 variables as common.
