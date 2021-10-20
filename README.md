@@ -137,11 +137,9 @@ x1=Int('x1')
 
 x2=Int('x2')
 
-#x3=Int('x3')
 
-#x4=Int('x4')
+x=[x1,x2]
 
-x=[x1]
 f=x1+x2<=5
 
 Output:
