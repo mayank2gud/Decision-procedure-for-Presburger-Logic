@@ -44,7 +44,7 @@ f should be: f=2*x1+(-3)*x2<=5
 
 Due to time constraints and increasing comlexity of the code, it is assumed that in 'and' operator, both the arguments have "all" the z3 variables as common.
 
-Ex:  f=And(x1+x2<=2,x1+x2==5) will show the desired output 
+Ex:  f=And(x1+x2<=2,x1+x2==5) will show the desired Output 
 
 but f=And(x3+x4<=2,x1+x2==5) will not.
 
@@ -62,7 +62,7 @@ x=[x1]
 f=x1<=2
 
 
-Output:
+### Output:
 
 Table for  x1 <= 2
 +-------+-----+-----+
@@ -100,7 +100,7 @@ x1=Int('x1')
 x=[x1]
 f=x1<=2
 
-Output:
+### Output:
 Table for  x1 <= 2
 +-------+-----+-----+
 
@@ -142,7 +142,7 @@ x=[x1,x2]
 
 f=x1+x2<=5
 
-Output:
+### Output:
 Table for  x1 + x2 <= 5
 
 +-------+--------+--------+--------+--------+
@@ -187,7 +187,7 @@ x3=Int('x3')
 
 x=[x1,x2,x3]
 f=x1+2*x2+(-3)*x3==1
-Output:
+### Output:
 Table for  x1 + 2*x2 + -3*x3 == 1
 
 +-------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
@@ -232,7 +232,7 @@ x=[x1,x2,x3]
 
 f=Not(x1+2*x2+(-3)*x3==1
 
-Output:
+### Output:
 table for  Not(x1 + 2*x2 + -3*x3 == 1)
 
 +-------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+
@@ -274,7 +274,7 @@ x=[x1,x2]
 
 f=And((x1+2*x2==4),(x1+x2<=3))
 
-Output:
+### Output:
 Table for  x1 + 2*x2 == 4
 
 +-------+--------+--------+--------+--------+
