@@ -88,6 +88,8 @@ def table_and(variables,table0,rhs0,fs0,vis0,table1,rhs1,fs1,vis1):
     print("Initial State: ",[rhs0,rhs1])
     for i in fs0:
         for j in fs1:
+            i=str(i)
+            j=str(j)
             if [i,j] in visited:
                 if [i,j] not in FS:
                     FS.append([i,j])
@@ -414,3 +416,4 @@ for i,j in map.items():
     print("%s = %s" %(i,j))
     f=substitute(f,(i,IntVal(j)))
 print("%s is %s" %(f_t,simplify(f)))
+
