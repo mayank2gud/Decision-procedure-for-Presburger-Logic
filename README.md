@@ -51,7 +51,7 @@ but f=And(x3+x4<=2,x1+x2==5) will not.
 
 ## Test Cases:
 
-Sample Input 1:
+### sample Input 1:
 
 val=[10]
 
@@ -93,7 +93,7 @@ x1 = 10
 x1 <= 2 is False
 
 
-Sample Input 2:
+### sample Input 2:
 
 val=[1]
 x1=Int('x1')
@@ -129,7 +129,7 @@ x1 = 1
 x1 <= 2 is True
 
 
-Sample Input 2:
+### sample Input 2:
 
 val=[2,1]
 
@@ -177,7 +177,7 @@ x2 = 1
 x1 + x2 <= 5 is True
 
 
-Sample Input 3:
+### sample Input 3:
 
 val=[2,1,0]
 
@@ -220,7 +220,7 @@ For:
 {x1: 2, x2: 1, x3: 0}
 x1 + 2*x2 + -3*x3 == 1 is False
 
-Sample Input 4:
+### sample Input 4:
 
 val=[2,1,0]
 
@@ -267,7 +267,7 @@ Not(x1 + 2*x2 + -3*x3 == 1) is True
 
 
 
-Sample Input 5:
+### sample Input 5:
 
 val=[1,1,0]
 x1=Int('x1')
