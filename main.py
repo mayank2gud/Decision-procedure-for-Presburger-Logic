@@ -1,19 +1,22 @@
 import prettytable
 from z3 import *
 from prettytable import PrettyTable
-val=[2,3]
+#Change input here.......
+val=[1,1,0]
 x1=Int('x1')
 x2=Int('x2')
-x3=Int('x3')
-x4=Int('x4')
+#x3=Int('x3')
+#x4=Int('x4')
 x=[x1,x2]
-f=And((Not(x1+x2<=2)),x1+x2==5)
+f=And(Not(x1+2*x2==4),(x1+x2<=3))
+#........................
 f_t=f
-
 #global x
 visited=set()
 map={}
 def table_and(variables,table0,rhs0,fs0,vis0,table1,rhs1,fs1,vis1):
+    rhs0=("%s"%(rhs0))
+    rhs1=("%s"%(rhs1))
     l=[]
     flist=[]
     table=PrettyTable()
@@ -88,6 +91,8 @@ def table_and(variables,table0,rhs0,fs0,vis0,table1,rhs1,fs1,vis1):
     print("Initial State: ",[rhs0,rhs1])
     for i in fs0:
         for j in fs1:
+            i=("%s"%(i))
+            j=("%s"%(j))
             i=str(i)
             j=str(j)
             if [i,j] in visited:
@@ -413,7 +418,7 @@ cal(f)
 print("For: ")
 print(map)
 for i,j in map.items():
-    print("%s = %s" %(i,j))
+    #print("%s = %s" %(i,j))
     f=substitute(f,(i,IntVal(j)))
 print("%s is %s" %(f_t,simplify(f)))
 
