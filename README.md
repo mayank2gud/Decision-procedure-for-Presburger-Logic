@@ -1,4 +1,4 @@
-# MayankSati_ATC_2021_Assignment
+# Decision procedure for Presburger Logic
 
 Instructions to run the code:
 
